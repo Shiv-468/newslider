@@ -1,6 +1,5 @@
-// NewSlider.jsx
 import React from "react";
-import Reviews from "./Reviews"; // Adjust the path if Reviews is in a different directory
+import Reviews from "./Reviews";
 
 export const CONTINUE_SLIDER = [
   { text: 'Social Tensor' },
@@ -15,7 +14,6 @@ export const CONTINUE_SLIDER = [
 ];
 
 const NewSlider = () => {
-  // Example keys for the Marquee component, they should be unique
   const key1 = "marquee1";
   const key2 = "marquee2";
   
