@@ -23,7 +23,7 @@ const Reviews = ({ items, key1, key2 }) => {
         onMouseEnter={() => setVelocity1(0)}
         onMouseLeave={() => setVelocity1(25)}
       >
-        <Marquee key={key1} velocity={velocity1} direction="rtl" resetAfterTries={0}>
+        <Marquee key={key1} velocity={velocity1} direction="ltr" resetAfterTries={0}>
           {[...items, ...items].map((item, index) => (
             <TextItem key={`marquee-example-people-${index}`}>
               {item.text}
@@ -36,7 +36,7 @@ const Reviews = ({ items, key1, key2 }) => {
         onMouseEnter={() => setVelocity2(0)}
         onMouseLeave={() => setVelocity2(25)}
       >
-        <Marquee key={key2} velocity={velocity2} direction="ltr" resetAfterTries={0}>
+        <Marquee key={key2} velocity={velocity2} direction="rtl" resetAfterTries={0}>
           {[...items, ...items].map((item, index) => (
             <TextItem key={`marquee-example-people-${index + items.length}`}>
               {item.text}
